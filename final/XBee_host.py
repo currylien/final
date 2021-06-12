@@ -1,0 +1,16 @@
+import serial
+serdev = '/dev/ttyUSB3'
+s = serial.Serial(serdev, 9600)
+line = s.read(25)
+print(line.decode())
+line = s.read(12)
+print(line.decode())
+line = s.read(14)
+print(line.decode())
+line = s.read(1)
+print(line.decode())
+line = s.read(23)
+print(line.decode())
+line = s.read(30)
+print(line.decode())
+s.close()
