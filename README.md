@@ -143,7 +143,7 @@ XBee_host.py
 import serial
 serdev = '/dev/ttyUSB0'
 s = serial.Serial(serdev, 9600)               # set up baud rate
-line = s.read(25)                             # read string send from XBee on the car
+line = s.read(25)                             # read string send from XBee on the car, which sends information of every subtask 
 print(line.decode()) 
 line = s.read(12)
 print(line.decode())
